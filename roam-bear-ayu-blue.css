@@ -1,0 +1,248 @@
+body {
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    letter-spacing: -0.001em;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* Set all the theme colors here */
+    :root {
+      --primary-bg-color: #1D2029;
+      --primary-border-color: #343A4B;
+      --primary-text-color: #bcc1ca;
+      --secondary-bg-color: #1F2027;
+      --secondary-text-color: #5c8bdd;
+      --dark-text-color: #343A4B;
+      --header-text-color: #95A0AE;
+      --highlighted-text-background-color: #2e4186;
+      --highlighted-text-color: #D1CFC8;
+    }
+
+    .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+        padding: 8px 20px;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 16px;
+        color: #ebeeff;
+    }
+
+    body, p, textarea, div, h1, h2, h3, h4, h5, h6 {
+        font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    /* Background color for the rest of body */
+    body {
+        background-color: var(--primary-bg-color);
+        font-size: 15px;
+        letter-spacing: -0.001em;
+        line-height: 1.4;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    /* styles page titling */
+    
+    /* Highlight */
+    .roam-highlight {
+        color: var(--highlighted-text-color);
+        background-color: var(--highlighted-text-background-color);
+    }
+
+    /* Header - Note title */
+    .roam-app h1 {
+        color: var(--header-text-color) !important;
+        font-weight: bold;
+    }
+
+    /* primary text colour */
+    .roam-app {
+        color: var(--primary-text-color) !important;
+    }
+
+    /*topbar*/
+    .roam-topbar {
+        background-color: var(--primary-bg-color);
+        border-bottom: 1px solid var(--primary-border-color);
+    }
+
+    /*sidebar*/
+    .roam-body .roam-app .roam-sidebar-container {
+        background-color: var(--primary-bg-color);
+        border-right: 1px solid var(--primary-border-color);
+    }
+
+    .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper {
+        color: var(--primary-text-color);
+    }
+
+    .flex-v-box .starred-pages-wrapper:first-child {
+        background-color: var(--secondary-bg-color);
+    }
+
+    .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+        color: var(--header-text-color);
+    }
+
+    .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+        color: var(--header-text-color);
+    }
+
+    /*right sidebar*/
+    #right-sidebar {
+        background-color: var(--secondary-bg-color) !important;
+        border-left: 1px solid var(--primary-border-color);
+        font-size: 15px;
+    }
+
+    #right-sidebar .flex-h-box .bp3-button .bp3-minimal .bp3-small {
+        color: var(--header-text-color);
+    }
+
+    /*border between page in daily notes*/
+    .roam-log-container .roam-log-page {
+        border-top: 1px solid var(--primary-border-color);
+    }
+
+    /* hashtags */
+    .rm-page-ref-tag {
+        color: var(--secondary-text-color) !important;
+    }
+
+    /* square brackets color */
+    .rm-page-ref-brackets {
+        color: var(--secondary-text-color);
+    }
+
+    .block-border-left {
+        border-left: 1px solid var(--primary-border-color);
+    }
+
+    .rm-block-ref {
+        border-bottom: 1px solid var(--primary-border-color);
+    }
+
+    .rm-block-ref:hover {
+        background: var(--secondary-bg-color);
+        border-bottom: 1px solid var(--header-text-color);
+    }
+
+    .rm-page-ref-tag:hover {
+        text-decoration: underline;
+    }
+
+    /* the bright blue highlight color */
+    .block-highlight-blue {
+        background-color: var(--secondary-text-color);
+    }
+
+    /* the reference boxes at the bottom */
+    .rm-reference-item {
+        background-color: #172133;
+        margin-top: 12px;
+        border: 1px solid #1E3745;
+        border-radius: 4px;
+    }
+
+    .rm-reference-item .roam-block {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .rm-reference-item .controls {
+        padding-top: 10px;
+        padding-bottom: 4px;
+    }
+
+    .rm-page-ref.rm-page-ref-link-color {
+        color: var(--secondary-text-color);
+    }
+
+    .rm-page-ref:hover {
+        color: var(--secondary-text-color);
+    }
+
+    .rm-page-ref.rm-page-ref-link-color {
+        color: var(--secondary-text-color);
+    }
+
+    /* pop up page completion */
+    .bp3-text-overflow-ellipsis {
+        color: #111c2a !important;
+    }
+
+    .bp3-elevation-3 {
+        color: #111c2a !important;
+        border: 1px solid #2d4562;
+    }
+
+    a {
+    color: var(--secondary-text-color);
+    }
+
+    a:focus {
+        color: var(--secondary-text-color);
+    }
+
+    a:hover {
+        color: var(--secondary-text-color);
+    }
+
+    .rm-level2 {
+        color: var(--secondary-text-color);
+        font-weight: 700;
+    }
+    
+    .rm-level2 a {
+        color: var(--header-text-color) !important;
+    }
+
+    .rm-level3 {
+        color: var(--secondary-text-color);
+        font-weight: 500;
+    }
+
+    code {
+        color: var(--header-text-color);
+        background: #162133;
+        border: 1px solid #2d4562;
+        padding: 0.3em 0.4em;
+        border-radius: 3px;
+    }
+    
+    .kanban-column {
+        color: var(--dark-text-color);
+    }
+
+
+    /* CodeMirror */
+    .CodeMirror {
+        background: #091722;
+        color: #589cab;
+    }
+
+    .CodeMirror-lines {
+        color: #a0a2b6
+    }
+
+    .CodeMirror-gutters {
+        background-color: #091722;
+        border-right: 1px solid #112a3f;
+    }
+
+    .CodeMirror-activeline-background {
+        background: #0D2030;
+    }
+
+    .cm-s-default .cm-keyword {
+        color: #5393a2;
+    }
+
+    .cm-s-default .cm-bracket .CodeMirror-matchingbracket {
+        text-decoration: #5393a2;
+        color: white !important;
+    }
+
+}
